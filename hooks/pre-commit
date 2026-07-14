@@ -1,10 +1,4 @@
 #!/usr/bin/env bash
 set -e
-
-staged_ts=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(ts|tsx|js|jsx|json|md)$' || true)
-
-if [ -n "$staged_ts" ]; then
-  prettier --check $staged_ts
-fi
-
+exec prettier --check .
 exec npx tsc --noEmit
