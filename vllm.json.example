@@ -1,0 +1,10 @@
+{
+  "baseUrl": "http://127.0.0.1:8000/v1",
+  "apiKey": "your-api-key-here",
+  "modelOverrides": [
+    {
+      "id": "deepseek-ai/DeepSeek-R1-0528",
+      "reasoning": true
+    }
+  ]
+}
