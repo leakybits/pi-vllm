@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -e
-exec prettier --check .
-exec npx tsc --noEmit
+prettier --check .
+npx tsc --noEmit
